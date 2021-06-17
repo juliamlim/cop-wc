@@ -26,13 +26,13 @@ class FirstPost extends HTMLElement {
         shadow.appendChild(author);
 
         /* Range Method */
-        // const str = `
-        //     <h1 class="post">"<slot>Second post ;(</slot>"</h1>
-        //     <p>~ ${this.getAttribute('name')}</p>
-        // `;
-        // const style = `<style>.post { background-color: var(--post-color, orange); }</style>`;
+        const str = `
+            <h1 class="post">"<slot>Second post ;(</slot>"</h1>
+            <p>~ ${this.getAttribute('name')}</p>
+        `;
+        const style = `<style>.post { background-color: var(--post-color, orange); }</style>`;
 
-        // const html = document.createRange().createContextualFragment(str + style);
+        const html = document.createRange().createContextualFragment(str + style);
         // console.log(str, html);
 
         shadow.appendChild(html);
